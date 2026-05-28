@@ -1,16 +1,15 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Información sobre el apoyo financiero de Hope Foundation, el proceso de revisión, colaboradores, inversionistas sociales y medidas de seguridad para solicitantes." />
-  <title>Hope Foundation - Información de Apoyo Financiero</title>
+  <meta name="description" content="Hope Foundation ofrece información sobre apoyo financiero, colaboradores, inversionistas sociales y orientación para personas y familias que necesitan asistencia." />
+  <title>Hope Foundation - Apoyo Financiero</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
   <style>
     :root {
@@ -20,16 +19,13 @@
       --canvas: #f4f7fb;
       --navy: #0b2f63;
       --blue: #0b5cab;
-      --blue-soft: #edf5ff;
       --green: #237a57;
-      --green-soft: #e9f7f0;
       --gold: #c49a2c;
-      --gold-soft: #fff7df;
       --panel: #ffffff;
       --shadow: 0 18px 45px rgba(15, 39, 77, 0.12);
     }
 
-    *, *::before, *::after {
+    * {
       box-sizing: border-box;
     }
 
@@ -38,13 +34,10 @@
     }
 
     body {
-      min-height: 100vh;
       margin: 0;
       font-family: "Inter", Arial, sans-serif;
       color: var(--ink);
-      background:
-        radial-gradient(circle at top left, rgba(35, 122, 87, 0.10), transparent 28rem),
-        linear-gradient(180deg, #ffffff 0%, var(--canvas) 54%);
+      background: linear-gradient(180deg, #ffffff 0%, var(--canvas) 55%);
       line-height: 1.6;
     }
 
@@ -56,9 +49,9 @@
     .topbar {
       position: sticky;
       top: 0;
-      z-index: 20;
-      border-bottom: 1px solid rgba(219, 226, 238, 0.9);
-      background: rgba(255, 255, 255, 0.94);
+      z-index: 10;
+      background: rgba(255, 255, 255, 0.95);
+      border-bottom: 1px solid var(--line);
       backdrop-filter: blur(14px);
     }
 
@@ -77,7 +70,7 @@
       align-items: center;
       gap: 12px;
       color: var(--navy);
-      font-weight: 800;
+      font-weight: 900;
     }
 
     .brand-mark {
@@ -94,18 +87,14 @@
     .brand-text {
       display: flex;
       flex-direction: column;
-      gap: 2px;
-      line-height: 1;
+      line-height: 1.05;
     }
 
-    .brand-text span:first-child {
-      font-size: 1.05rem;
-    }
-
-    .brand-text span:last-child {
+    .brand-text small {
+      margin-top: 3px;
       color: var(--muted);
-      font-size: 0.76rem;
-      font-weight: 700;
+      font-size: 0.74rem;
+      font-weight: 800;
       letter-spacing: 0.08em;
       text-transform: uppercase;
     }
@@ -121,14 +110,13 @@
       border-radius: 8px;
       color: var(--muted);
       font-size: 0.94rem;
-      font-weight: 700;
+      font-weight: 800;
       white-space: nowrap;
     }
 
-    nav a:hover,
-    nav a.active {
+    nav a:hover {
       color: var(--blue);
-      background: var(--blue-soft);
+      background: #edf5ff;
     }
 
     .page {
@@ -137,15 +125,15 @@
     }
 
     .hero {
-      min-height: 460px;
+      min-height: 470px;
       padding: 44px;
       border-radius: 8px;
       color: white;
       background:
-        linear-gradient(115deg, rgba(11, 47, 99, 0.95), rgba(35, 122, 87, 0.76)),
+        linear-gradient(115deg, rgba(11, 47, 99, 0.96), rgba(35, 122, 87, 0.78)),
         url("https://images.unsplash.com/photo-1556740758-90de374c12ad?auto=format&fit=crop&w=1600&q=80");
-      background-position: center;
       background-size: cover;
+      background-position: center;
       background-blend-mode: multiply;
       box-shadow: var(--shadow);
       display: grid;
@@ -158,7 +146,7 @@
       margin: 0 0 12px;
       color: rgba(255, 255, 255, 0.78);
       font-size: 0.78rem;
-      font-weight: 800;
+      font-weight: 900;
       letter-spacing: 0.12em;
       text-transform: uppercase;
     }
@@ -174,7 +162,7 @@
     .hero-copy {
       max-width: 680px;
       margin: 18px 0 0;
-      color: rgba(255, 255, 255, 0.86);
+      color: rgba(255, 255, 255, 0.88);
       font-size: 1.05rem;
     }
 
@@ -193,7 +181,7 @@
       gap: 8px;
       padding: 12px 18px;
       border-radius: 8px;
-      font-weight: 800;
+      font-weight: 900;
       border: 1px solid transparent;
     }
 
@@ -239,7 +227,7 @@
     }
 
     .section-header {
-      max-width: 760px;
+      max-width: 780px;
       margin-bottom: 20px;
     }
 
@@ -270,47 +258,48 @@
       padding: 30px;
       border: 1px solid var(--line);
       border-radius: 8px;
-      background: rgba(255, 255, 255, 0.94);
+      background: rgba(255, 255, 255, 0.96);
       box-shadow: 0 10px 24px rgba(15, 39, 77, 0.08);
     }
 
     .info-band p {
-      max-width: 900px;
+      max-width: 920px;
       margin: 0;
       color: var(--muted);
       font-size: 1.04rem;
     }
 
-    .support-grid,
-    .partner-grid,
-    .security-grid {
+    .grid-4,
+    .grid-3,
+    .grid-2,
+    .process {
       display: grid;
       gap: 18px;
     }
 
-    .support-grid {
+    .grid-4 {
       grid-template-columns: repeat(4, minmax(0, 1fr));
     }
 
-    .partner-grid {
+    .grid-3 {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .grid-2 {
       grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
-    .security-grid {
-      grid-template-columns: repeat(4, minmax(0, 1fr));
-    }
-
-    .info-card,
-    .partner-card,
-    .security-item {
+    .card,
+    .security-item,
+    .process-step {
       border: 1px solid var(--line);
       border-radius: 8px;
       background: var(--panel);
       box-shadow: 0 10px 22px rgba(15, 39, 77, 0.07);
     }
 
-    .info-card,
-    .partner-card {
+    .card,
+    .process-step {
       padding: 22px;
     }
 
@@ -321,51 +310,41 @@
       place-items: center;
       border-radius: 8px;
       color: var(--blue);
-      background: var(--blue-soft);
+      background: #edf5ff;
       font-size: 25px;
     }
 
-    .info-card:nth-child(2) .icon-box,
-    .partner-card:nth-child(2) .icon-box {
+    .card:nth-child(2) .icon-box {
       color: var(--green);
-      background: var(--green-soft);
+      background: #e9f7f0;
     }
 
-    .info-card:nth-child(3) .icon-box,
-    .partner-card:nth-child(3) .icon-box {
+    .card:nth-child(3) .icon-box {
       color: var(--gold);
-      background: var(--gold-soft);
+      background: #fff7df;
     }
 
-    .info-card h3,
-    .partner-card h3 {
+    .card h3,
+    .process-step h3 {
       margin: 18px 0 8px;
       color: var(--navy);
       font-size: 1.08rem;
       line-height: 1.25;
     }
 
-    .info-card p,
-    .partner-card p {
+    .card p,
+    .process-step p {
       margin: 0;
       color: var(--muted);
       font-size: 0.95rem;
     }
 
     .process {
-      display: grid;
       grid-template-columns: repeat(4, minmax(0, 1fr));
-      gap: 14px;
       counter-reset: step;
     }
 
     .process-step {
-      position: relative;
-      padding: 22px;
-      border: 1px solid var(--line);
-      border-radius: 8px;
-      background: var(--panel);
-      box-shadow: 0 10px 22px rgba(15, 39, 77, 0.07);
       counter-increment: step;
     }
 
@@ -379,18 +358,6 @@
       color: white;
       background: var(--blue);
       font-weight: 900;
-    }
-
-    .process-step h3 {
-      margin: 18px 0 8px;
-      color: var(--navy);
-      font-size: 1rem;
-    }
-
-    .process-step p {
-      margin: 0;
-      color: var(--muted);
-      font-size: 0.93rem;
     }
 
     .partner-section {
@@ -416,7 +383,7 @@
       color: rgba(255, 255, 255, 0.78);
     }
 
-    .partner-card {
+    .partner-section .card {
       background: rgba(255, 255, 255, 0.96);
     }
 
@@ -465,7 +432,7 @@
     .cta-band p {
       max-width: 660px;
       margin: 10px 0 0;
-      color: rgba(255, 255, 255, 0.82);
+      color: rgba(255, 255, 255, 0.84);
     }
 
     footer {
@@ -477,19 +444,13 @@
       font-size: 0.92rem;
     }
 
-    footer a {
-      color: var(--blue);
-      font-weight: 700;
-    }
-
     @media (max-width: 960px) {
       .hero {
         grid-template-columns: 1fr;
       }
 
-      .hero-facts,
-      .support-grid,
-      .security-grid,
+      .grid-4,
+      .grid-3,
       .process {
         grid-template-columns: repeat(2, minmax(0, 1fr));
       }
@@ -525,9 +486,9 @@
         padding: 24px;
       }
 
-      .support-grid,
-      .partner-grid,
-      .security-grid,
+      .grid-4,
+      .grid-3,
+      .grid-2,
       .process {
         grid-template-columns: 1fr;
       }
@@ -551,11 +512,12 @@
         <span class="brand-mark material-icons" aria-hidden="true">volunteer_activism</span>
         <span class="brand-text">
           <span>Hope Foundation</span>
-          <span>Asistencia y apoyo</span>
+          <small>Asistencia y apoyo</small>
         </span>
       </a>
-      <nav role="navigation" aria-label="Menú principal">
-        <a href="#apoyo" class="active" aria-current="page">Apoyo</a>
+
+      <nav aria-label="Menú principal">
+        <a href="#apoyo">Apoyo</a>
         <a href="#proceso">Proceso</a>
         <a href="#colaboradores">Colaboradores</a>
         <a href="#contacto">Contacto</a>
@@ -563,14 +525,15 @@
     </div>
   </header>
 
-  <main class="page" role="main" aria-labelledby="page-title">
-    <section class="hero" id="inicio" aria-label="Información principal sobre apoyo financiero">
+  <main class="page" id="inicio">
+    <section class="hero" aria-label="Información principal sobre apoyo financiero">
       <div>
         <p class="eyebrow">Información institucional</p>
-        <h1 id="page-title">Apoyo financiero con revisión responsable</h1>
+        <h1>Apoyo financiero para personas y familias</h1>
         <p class="hero-copy">
-          Hope Foundation ofrece orientación y asistencia económica para personas y familias que atraviesan momentos de necesidad. Cada solicitud se revisa caso por caso y está sujeta a criterios internos y disponibilidad de recursos.
+          Hope Foundation ofrece orientación y asistencia económica para personas y familias que atraviesan momentos de necesidad. Nuestro propósito es acompañar cada caso con respeto, claridad y responsabilidad.
         </p>
+
         <div class="hero-actions">
           <a class="btn primary" href="#contacto">
             Solicitar información
@@ -583,10 +546,10 @@
         </div>
       </div>
 
-      <div class="hero-facts" aria-label="Resumen del proceso">
+      <div class="hero-facts">
         <div class="fact">
-          <strong>Revisión individual</strong>
-          <span>No todas las solicitudes reciben el mismo tipo de apoyo.</span>
+          <strong>Atención individual</strong>
+          <span>Cada solicitud se orienta según la situación presentada.</span>
         </div>
         <div class="fact">
           <strong>Seguimiento humano</strong>
@@ -594,44 +557,46 @@
         </div>
         <div class="fact">
           <strong>Proceso sin pagos</strong>
-          <span>No se cobra por aplicar ni por recibir orientación inicial.</span>
+          <span>No se cobra por solicitar orientación inicial.</span>
         </div>
       </div>
     </section>
 
-    <section class="section info-band" id="apoyo" aria-label="Descripción del programa">
+    <section class="section info-band" id="apoyo">
       <p>
-        El programa de apoyo financiero busca ayudar en situaciones de vulnerabilidad, emergencias personales o necesidades básicas. La fundación puede orientar, revisar documentación general y conectar a los solicitantes con opciones de asistencia según el caso presentado.
+        Hope Foundation trabaja para brindar apoyo financiero, orientación y acompañamiento a personas en situación vulnerable. La fundación busca conectar recursos, colaboradores y programas de ayuda para atender necesidades básicas, emergencias personales y oportunidades de progreso.
       </p>
     </section>
 
-    <section class="section" aria-labelledby="support-title">
+    <section class="section">
       <div class="section-header">
         <p class="section-kicker">Áreas de apoyo</p>
-        <h2 id="support-title">Tipos de ayuda que pueden revisarse</h2>
-        <p class="section-note">La asistencia puede variar según la necesidad, la información recibida y los recursos disponibles al momento de la revisión.</p>
+        <h2>Tipos de ayuda que pueden revisarse</h2>
+        <p class="section-note">
+          La asistencia puede variar según la necesidad, la información recibida y los recursos disponibles al momento de la revisión.
+        </p>
       </div>
 
-      <div class="support-grid">
-        <article class="info-card">
+      <div class="grid-4">
+        <article class="card">
           <span class="icon-box material-icons" aria-hidden="true">home</span>
           <h3>Gastos básicos</h3>
           <p>Orientación para familias que necesitan apoyo con necesidades esenciales del hogar.</p>
         </article>
 
-        <article class="info-card">
+        <article class="card">
           <span class="icon-box material-icons" aria-hidden="true">health_and_safety</span>
           <h3>Emergencias personales</h3>
           <p>Revisión de casos urgentes donde una ayuda puntual puede aliviar una situación difícil.</p>
         </article>
 
-        <article class="info-card">
+        <article class="card">
           <span class="icon-box material-icons" aria-hidden="true">school</span>
           <h3>Educación y progreso</h3>
           <p>Acompañamiento para personas que buscan estabilidad, capacitación o nuevas oportunidades.</p>
         </article>
 
-        <article class="info-card">
+        <article class="card">
           <span class="icon-box material-icons" aria-hidden="true">groups</span>
           <h3>Apoyo comunitario</h3>
           <p>Coordinación de esfuerzos solidarios para fortalecer redes locales de ayuda.</p>
@@ -639,17 +604,19 @@
       </div>
     </section>
 
-    <section class="section" id="proceso" aria-labelledby="process-title">
+    <section class="section" id="proceso">
       <div class="section-header">
         <p class="section-kicker">Proceso de solicitud</p>
-        <h2 id="process-title">Cómo se revisa una solicitud</h2>
-        <p class="section-note">El objetivo es mantener un proceso claro, ordenado y respetuoso para cada persona que solicita asistencia.</p>
+        <h2>Cómo se revisa una solicitud</h2>
+        <p class="section-note">
+          El objetivo es mantener un proceso claro, ordenado y respetuoso para cada persona que solicita asistencia.
+        </p>
       </div>
 
       <div class="process">
         <article class="process-step">
           <h3>Registro inicial</h3>
-          <p>La persona comparte datos básicos para iniciar el expediente de solicitud.</p>
+          <p>La persona comparte datos básicos para iniciar la revisión de su solicitud.</p>
         </article>
 
         <article class="process-step">
@@ -663,41 +630,41 @@
         </article>
 
         <article class="process-step">
-          <h3>Respuesta final</h3>
-          <p>La fundación comunica si existe una opción de apoyo o una alternativa de orientación.</p>
+          <h3>Respuesta del equipo</h3>
+          <p>La fundación comunica la orientación correspondiente según el caso revisado.</p>
         </article>
       </div>
     </section>
 
-    <section class="section partner-section" id="colaboradores" aria-labelledby="partners-title">
+    <section class="section partner-section" id="colaboradores">
       <div class="section-header">
         <p class="section-kicker">Colaboradores e inversionistas sociales</p>
-        <h2 id="partners-title">Una red que impulsa la ayuda</h2>
+        <h2>Una red que impulsa la ayuda</h2>
         <p class="section-note">
           El apoyo se fortalece con personas, aliados comunitarios, donantes e inversionistas sociales comprometidos con el bienestar de familias vulnerables.
         </p>
       </div>
 
-      <div class="partner-grid">
-        <article class="partner-card">
+      <div class="grid-2">
+        <article class="card">
           <span class="icon-box material-icons" aria-hidden="true">volunteer_activism</span>
           <h3>Colaboradores comunitarios</h3>
           <p>Apoyan la orientación, el contacto con familias y la organización de iniciativas locales.</p>
         </article>
 
-        <article class="partner-card">
+        <article class="card">
           <span class="icon-box material-icons" aria-hidden="true">savings</span>
           <h3>Inversionistas sociales</h3>
-          <p>Aportan recursos para programas de ayuda. Estas aportaciones son de impacto social y no representan promesas de retorno financiero.</p>
+          <p>Aportan recursos para programas de ayuda y fortalecimiento comunitario.</p>
         </article>
 
-        <article class="partner-card">
+        <article class="card">
           <span class="icon-box material-icons" aria-hidden="true">handshake</span>
           <h3>Aliados institucionales</h3>
           <p>Facilitan alcance, logística y coordinación para que la asistencia llegue de forma organizada.</p>
         </article>
 
-        <article class="partner-card">
+        <article class="card">
           <span class="icon-box material-icons" aria-hidden="true">diversity_3</span>
           <h3>Voluntariado</h3>
           <p>Personas que dedican tiempo y servicio para acompañar actividades de apoyo y seguimiento.</p>
@@ -705,14 +672,16 @@
       </div>
     </section>
 
-    <section class="section" aria-labelledby="security-title">
+    <section class="section">
       <div class="section-header">
         <p class="section-kicker">Seguridad y transparencia</p>
-        <h2 id="security-title">Puntos importantes antes de aplicar</h2>
-        <p class="section-note">Estos avisos ayudan a proteger a cada solicitante y a mantener un proceso confiable.</p>
+        <h2>Puntos importantes antes de aplicar</h2>
+        <p class="section-note">
+          Estos avisos ayudan a proteger a cada solicitante y a mantener un proceso confiable.
+        </p>
       </div>
 
-      <div class="security-grid">
+      <div class="grid-3">
         <div class="security-item">
           <span class="material-icons" aria-hidden="true">payments</span>
           <span>
@@ -730,14 +699,6 @@
         </div>
 
         <div class="security-item">
-          <span class="material-icons" aria-hidden="true">fact_check</span>
-          <span>
-            <strong>Sin aprobación garantizada</strong>
-            <span>La ayuda depende de la revisión y disponibilidad.</span>
-          </span>
-        </div>
-
-        <div class="security-item">
           <span class="material-icons" aria-hidden="true">privacy_tip</span>
           <span>
             <strong>Datos protegidos</strong>
@@ -747,11 +708,14 @@
       </div>
     </section>
 
-    <section class="section cta-band" id="contacto" aria-label="Acciones para solicitar información">
+    <section class="section cta-band" id="contacto">
       <div>
-        <h2>¿Desea conocer si puede aplicar?</h2>
-        <p>Comuníquese con el equipo para recibir orientación sobre requisitos, disponibilidad de apoyo y seguimiento de solicitudes.</p>
+        <h2>¿Desea recibir más información?</h2>
+        <p>
+          Comuníquese con el equipo para recibir orientación sobre requisitos, disponibilidad de apoyo y seguimiento de solicitudes.
+        </p>
       </div>
+
       <a class="btn primary" href="https://wa.me/3654358920" target="_blank" rel="noopener">
         Escribir por WhatsApp
         <span class="material-icons" aria-hidden="true">open_in_new</span>
@@ -763,5 +727,4 @@
     &copy; 2026 Hope Foundation | Información de apoyo financiero | Teléfono: 365-435-8920
   </footer>
 </body>
-
 </html>
