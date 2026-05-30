@@ -14,12 +14,8 @@
   fbq('init', '2812548059101709');
   fbq('track', 'PageView');
   </script>
-  <noscript><img height="1" width="1" style="display:none"
-  src="https://www.facebook.com/tr?id=2812548059101709&ev=PageView&noscript=1"
-  /></noscript>
   <!-- End Meta Pixel Code -->
 
-  <meta charset="UTF-8" />
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="Hope Foundation ofrece información sobre apoyo financiero, colaboradores, inversionistas sociales y orientación para personas y familias que necesitan asistencia." />
@@ -525,6 +521,13 @@
 </head>
 
 <body>
+  <noscript>
+    <img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=2812548059101709&ev=PageView&noscript=1"
+      alt=""
+    />
+  </noscript>
+
   <header class="topbar">
     <div class="topbar-inner">
       <a class="brand" href="#inicio" aria-label="Hope Foundation">
@@ -735,7 +738,7 @@
         </p>
       </div>
 
-      <a class="btn primary" href="https://wa.me/18509674096" target="_blank" rel="noopener">
+      <a id="whatsapp-link" class="btn primary" href="https://wa.me/18509674096?text=Hola%2C%20quiero%20recibir%20informaci%C3%B3n%20sobre%20apoyo%20financiero." target="_blank" rel="noopener">
         Escribir por WhatsApp
         <span class="material-icons" aria-hidden="true">open_in_new</span>
       </a>
@@ -745,5 +748,17 @@
   <footer>
     &copy; 2026 Hope Foundation | Información de apoyo financiero | WhatsApp: +1 850-967-4096
   </footer>
+
+  <script>
+    const whatsappLink = document.getElementById('whatsapp-link');
+
+    if (whatsappLink) {
+      whatsappLink.addEventListener('click', function () {
+        if (typeof fbq === 'function') {
+          fbq('track', 'Contact');
+        }
+      });
+    }
+  </script>
 </body>
 </html>
